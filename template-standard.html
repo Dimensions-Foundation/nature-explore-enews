@@ -8,21 +8,21 @@
 body,
 #bodyTable,
 #bodyCell {
-	height: 100% !important;
-	margin: 0;
-	padding: 0;
-	width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
 }
 
 table {
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 img,
 a img {
-	border: 0;
-	outline: none;
-	text-decoration: none;
+    border: 0;
+    outline: none;
+    text-decoration: none;
 }
 
 h1,
@@ -31,18 +31,18 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* ///// CLIENT-SPECIFIC STYLES ///// */
 /* Force Hotmail/Outlook to display emails at full width */
 .ReadMsgBody {
-	width: 100%;
+    width: 100%;
 }
 
 .ExternalClass {
-	width: 100%;
+    width: 100%;
 }
 
 /* Force Hotmail/Outlook.com to display line heights normally */
@@ -52,17 +52,17 @@ h6 {
 .ExternalClass font,
 .ExternalClass td,
 .ExternalClass div {
-	line-height: 100%;
+    line-height: 100%;
 }
 
 /* Force Outlook 2007 and up to provide a "view in browser" message */
 #outlook a {
-	padding: 0;
+    padding: 0;
 }
 
 /* Force IE to smoothly render resized images */
 img {
-	-ms-interpolation-mode: bicubic;
+    -ms-interpolation-mode: bicubic;
 }
 
 /* Prevent Windows- nad Webkit-based mobile platforms from chaning declared text sizes; */
@@ -73,17 +73,19 @@ p,
 a,
 li,
 blockquote {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /* ///// BEGIN EMAIL STYLES ///// */
-body {
-	background-color: #DFE9CF;
+body,
+#upcomingEvents,
+#upcomingPresentations {
+    background-color: #DFE9CF;
 }
 
 #contentContainer {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 #titleCell { background-color: #8EC449;}
 
@@ -100,7 +102,7 @@ p,
 a,
 li,
 span {
-	font-family: "Arial", Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Arial", Helvetica Neue, Helvetica, sans-serif;
 }
 
 td, p, li, span { color: #58585a; }
@@ -110,44 +112,44 @@ h2,
 h3,
 h4,
 a {
-	color: #8ec449;
+    color: #8ec449;
 }
 
 h5 {
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 h1 {
-	font-weight: 200;
-	font-size: 44px;
+    font-weight: 200;
+    font-size: 28pt;
 }
 
 h2 {
-	font-weight: 200;
-	font-size: 37px;
+    font-weight: 200;
+    font-size: 24pt;
 }
 
 h3 {
-	font-weight: 500;
-	font-size: 27px;
+    font-weight: 500;
+    font-size: 20pt;
 }
 
 h4 {
-	font-weight: 900;
-	font-size: 18pt;
+    font-weight: 900;
+    font-size: 14pt;
 }
 
 h5 {
-	font-weight: 900;
-	font-size: 11pt;
+    font-weight: 900;
+    font-size: 11pt;
 }
 </style>
 </head>
-<body>
+<body bgcolor="#DFE9CF">
 <center>
   
   <!-- bodyTable: This is the body of the email -->
-  <table broder="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+  <table bgcolor="#DFE9CF" broder="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr> 
       
       <!-- emailContainer: This is the container the houses our email -->
@@ -155,9 +157,9 @@ h5 {
           
           <!-- titleBanner: This is the header with title -->
           <tr>
-            <td align="center" valign="top" id="titleCell"><table broder="0" cellpadding="0" cellspacing="0" width="550" height="50">
+            <td align="center" valign="top" id="titleCell"><table bgcolor="#8EC449" broder="0" cellpadding="10" cellspacing="0" width="550" height="50">
                 <tr>
-                  <td align="right" valign="middle" id="titleContainer"><h5>Month 20## Newsletter</h5></td>
+                  <td align="right" valign="middle" id="titleContainer" height="50"><h5>Month 20## Newsletter</h5></td>
                 </tr>
               </table></td>
           </tr>
@@ -165,7 +167,7 @@ h5 {
           
           <!-- menuContainer: This is the email navigation -->
           <tr>
-            <td align="center" valign="top" id="menuContainer"><table broder="0" cellpadding="0" cellspacing="0" width="550">
+            <td align="center" valign="top" id="menuContainer"><table broder="0" cellpadding="5" cellspacing="0" width="550">
                 <tr>
                   <td align="center" valign="top" id="natureExploreIcon"><a href="" target="_blank"><img src="100x100.jpg" width="100" height="100" alt="Placholder Img" /></a></td>
                   <td align="center" valign="middle" id="designLink" width="100"><a href="" target="_blank">Design</a></td>
@@ -179,9 +181,9 @@ h5 {
           
           <!-- contentContainer: This is the main content of the email -->
           <tr>
-            <td align="center" valign="top" id="contentCell"><table broder="0" cellpadding="0" cellspacing="0"  width="550"  id="contentContainer">
+            <td align="center" valign="top" id="contentCell"><table bgcolor="#FFFFFF" broder="0" cellpadding="10" cellspacing="0"  width="550"  id="contentContainer">
                 
-                <!-- heroImgContainer: This is hero img -->
+                <!-- heroImgContainer: This is hero img [width="520"]-->
                 <tr>
                   <td align="center" valign="top" id="heroImgContainer"><img src="520x415.jpg" width="520" height="415" alt="Placeholder Img" /></td>
                 </tr>
@@ -196,9 +198,10 @@ h5 {
                 
                 <!-- story-1-Container: This is the first highlighted story -->
                 <tr>
-                  <td align="center" valign="top" id="story-1-Container"><table broder="0" cellpadding="0" cellspacing="0"  width="100%">
+                  <td align="center" valign="top" id="story-1-Container"><table broder="0" cellpadding="5" cellspacing="0"  width="100%">
                       <tr>
-                        <td align="center" valign="top" id="story-1-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
+                          <!-- Story 1 Img [width="250"] -->
+                        <td align="center" valign="top" width="250" id="story-1-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
                         <td align="justify" valign="middle" width="250" id="story-1-Content"><h4>First Story Title</h4>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra quam a lacus porta pharetra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque efficitur nec eros eu ultrices. Mauris placerat non ex ut consectetur.</td>
                       </tr>
@@ -208,9 +211,10 @@ h5 {
                 
                 <!-- story-2-Container: This is the second highlighted story -->
                 <tr>
-                  <td align="center" valign="top" id="story-2-Container"><table broder="0" cellpadding="0" cellspacing="0"  width="100%">
+                  <td align="center" valign="top" id="story-2-Container"><table broder="0" cellpadding="5" cellspacing="0"  width="100%">
                       <tr>
-                        <td align="center" valign="top" id="story-2-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
+                          <!-- Story 2 Img [width="250"] -->
+                        <td align="center" valign="top" width="250" id="story-2-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
                         <td align="justify" valign="middle" width="250" id="story-2-Content"><h4>Second Story Title</h4>
                           Suspendisse cursus tristique lacus, sit amet eleifend nunc efficitur in. Vivamus ligula odio, suscipit ut nulla eget, finibus rhoncus nisi. Nunc tristique, turpis eget blandit mollis, tortor orci pellentesque lacus, eu bibendum purus diam quis justo.</td>
                       </tr>
@@ -220,9 +224,10 @@ h5 {
                 
                 <!-- story-3-Container: This is the third highlighted story -->
                 <tr>
-                  <td align="center" valign="top" id="story-3-Container"><table broder="0" cellpadding="0" cellspacing="0"  width="100%">
+                  <td align="center" valign="top"  id="story-3-Container"><table broder="0" cellpadding="5" cellspacing="0"  width="100%">
                       <tr>
-                        <td align="center" valign="top" id="story-3-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
+                          <!-- Story 3 Img [width="250"] -->
+                        <td align="center" valign="top" width="250" id="story-3-Img"><img src="250x250.jpg" width="250" height="250" alt="Placeholder Img" /></td>
                         <td align="justify" valign="middle" width="250" id="story-3-Content"><h4>Third Story Title</h4>
                           In tincidunt viverra lacus, non aliquam magna vehicula id. Morbi tristique quis sem vel auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec lobortis, eros sed commodo bibendum, sem risus volutpat libero, id sollicitudin dui velit non elit. Quisque non cursus ligula. </td>
                       </tr>
@@ -232,21 +237,21 @@ h5 {
                 
                 <!-- upcomingContainer: This is the upcoming events and presentations -->
                 <tr>
-                  <td align="center" valign="top" id="upcomingContainer"><table broder="0" cellpadding="0" cellspacing="0"  width="100%">
+                  <td align="center" valign="top" id="upcomingContainer"><table broder="0" cellpadding="10" cellspacing="5"  width="100%" style="border-collapse:separate">
                       <tr>
-                        <td align="center" valign="top" width="250" id="upcomingEvents" ><table broder="0" cellpadding="0" cellspacing="0" >
+                        <td align="center" valign="top" width="250" id="upcomingEvents" ><table bgcolor="#DFE9CF" broder="0" cellpadding="0" cellspacing="0" >
                             <tr>
-                              <td align="left" valign="top" width="100%" ><h4>Upcoming Workshops</h4>
+                              <td align="left" valign="top" width="95%" ><h4>Upcoming Workshops</h4>
                                 <ul>
                                   <li>Ut neque felis</li>
                                   <li>Fermentum sed</li>
                                   <li>Ante dignissim</li>
                                 </ul></td>
                             </tr>
-                          </table></td>
-                        <td align="center" valign="top" width="250" id="upcomingPresentations"><table broder="0" cellpadding="0" cellspacing="0"  >
+                          </table></td>                        
+                          <td align="center" valign="top" width="250" id="upcomingPresentations"><table bgcolor="#DFE9CF" broder="0" cellpadding="0" cellspacing="0"  >
                             <tr>
-                              <td align="left" valign="top" width="100%" ><h4>Presentations &amp; Events</h4>
+                              <td align="left" valign="top" width="95%" ><h4>Presentations &amp; Events</h4>
                                 <ul>
                                   <li>Vivamus pretium</li>
                                   <li>Fusce pretium</li>
@@ -261,7 +266,8 @@ h5 {
                 
                 <!-- socialContainer: This is the social media navigation-->
                 <tr>
-                  <td align="center" valign="top" id="socialContainer"><table broder="0" cellpadding="0" cellspacing="0"  width="100%">
+                    <!-- Icon Img [width="72"] -->
+                  <td align="center" valign="top" id="socialContainer"><table broder="0" cellpadding="2" cellspacing="0"  width="100%">
                       <tr>
                         <td align="center" valign="top" id="connectImg"><img src="72x72.jpg" width="72" height="72" alt="Placeholder Img" /></td>
                         <td align="center" valign="top" id="facebookIcon"><img src="72x72.jpg" width="72" height="72" alt="Placeholder Img" /></td>
@@ -281,7 +287,7 @@ h5 {
           
           <!-- footerContainer: This is the footer of the email -->
           <tr>
-            <td align="center" valign="top" id="footerCell"><table broder="0" cellpadding="0" cellspacing="0"  width="550" id="footerContainer">
+            <td align="center" valign="top" id="footerCell"><table broder="0" cellpadding="10" cellspacing="0"  width="550" id="footerContainer">
                 <tr>
                   <td align="center" valign="top"> Copyright ©2016 Nature Explore, All rights reserved.<br />
                     Nature Explore is a collaborative program of Arbor Day Foundation and Dimensions Educational Research Foundation, 501(c)3 non-profit organizations. </td>
